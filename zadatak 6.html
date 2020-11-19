@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<p>JS-Vjezbe2-zadatak6</p>
+<p>Funkcija koja prima i vraca podatke koji se pojavljuju samo jednom</p>
+
+
+<script>
+
+function removeDuplicates(array) {
+    let a = {};
+  array.forEach(function(x) {
+    if(!a[x]) {
+      a[x] = true
+    }
+    else  if (array === undefined || array.length == 0) {
+    }
+  })
+  return Object.keys(a)
+ 
+};
+
+console.log(removeDuplicates([1, 2, 1, 3, 1, 4, 1, 5, "a", "a", "b", "c"]))
+//[1, 2, 3, 4, 5, "a", "b", "c"]
+console.log(removeDuplicates([]))
+</script>
+
+</body>
+</html>

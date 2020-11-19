@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<p>JS-Vjezbe2-zadatak4</p>
+<p>Validacija unesenog email-a</p>
+
+
+<script>
+
+function emailValidator(string) {
+    var pregledaj = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+return String(string).search (pregledaj) != -1;
+}
+console.log(emailValidator("tstarcic@student.unipu.hr"))
+
+
+</script>
+
+</body>
+</html>

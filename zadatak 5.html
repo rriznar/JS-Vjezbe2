@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<p>JS-Vjezbe2-zadatak5</p>
+<p>Validacija lozinke</p>
+
+
+<script>
+
+function passwordValidator(string) {
+
+    var pass = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,15}$/;
+    return pass.test(string);
+}
+
+console.log(passwordValidator("123Aa!"))
+console.log(passwordValidator("A"))
+console.log(passwordValidator("123aa!"))
+</script>
+
+</body>
+</html>
